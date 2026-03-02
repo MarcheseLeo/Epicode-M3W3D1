@@ -76,28 +76,29 @@ nav.navbar>div>div:nth-of-type(2)>div.dropdown>a>span {
     color: #777;
     max-width: fit-content;
 }
-#recommended-section .card{
+section:not(#hero-section) .card{
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     overflow: hidden;   
 }
 
-#recommended-section .card-title{
+section:not(#hero-section) .card-title{
     font-size: 1.1rem;
 }
-
-#recommended-section .card-subtitle{
+section:not(#hero-section) .card-subtitle{
     color: #555;
 }
-#recommended-section .fa-chart-simple{
+section:not(#hero-section) .fa-chart-simple{
     color: #7550FD;
 }
-#recommended-section .card-group + .card-group:not(:last-child){
+section:not(#hero-section) .card-group + .card-group:not(:last-child){
      border-bottom: 2px solid #d4d1dd;
 }
-#recommended-section .card-group:last-child{
+section:not(#hero-section) .card-group:last-child{
     margin-top: 1rem;    
 }
+
+
 .fa-bookmark{
     color: #444;
 }
