@@ -1,0 +1,148 @@
+body {
+    font-family: 'MontSerrat', Arial, Helvetica, sans-serif;
+    background-color: #F5F4F9;
+}
+
+.navbar-nav .nav-link {
+    color: #333;
+    font-weight: 600;
+}
+
+
+.profile-img {
+    object-fit: cover;
+}
+
+nav.navbar>div>div:nth-of-type(2)>a>span {
+    background-color: #754FFF;
+    top: 1px;
+    right: 0px;
+    border: 5px solid #FFFFFF;
+}
+
+.fa-bell {
+    border: 1px solid #F5F4F9;
+    padding: 15px;
+    width: auto;
+    border-radius: 50%;
+    background-color: #F5F4F9;
+}
+
+nav.navbar>div>div:nth-of-type(2)>div.dropdown>a>span {
+    background-color: #1ACA97;
+    bottom: -2px;
+    right: 1px;
+    border: 5px solid #FFFFFF;
+}
+
+#hero-section > div:first-of-type button:first-of-type{
+    background-color: #1ACA97;
+}
+#hero-section > div:first-of-type button:last-of-type{
+    background-color: white;
+    color: #333;
+}
+#hero-section > div:first-of-type button{
+    padding: 15px;
+}
+
+#hero-bottom i{
+    border: 1px solid #F5F4F9;
+    padding: 17px;
+    width: auto;
+    border-radius: 50%;
+    background-color: #FFEEDA;
+    color: #C18645;
+}
+
+#hero-bottom .card{
+    border: 0;
+}
+
+#hero-bottom{
+    background-color: white;    
+    box-shadow: 0px 20px 20px -5px rgba(0,0,0,0.45);
+}
+.discount{
+    color: #777;
+    display: inline-block;
+}
+.discount::after{
+    position: absolute;
+    display: block;
+    content: '_____';
+    top: -15%;
+    height: 1px;
+    color: #777;
+    max-width: fit-content;
+}
+#recommended-section .card{
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    overflow: hidden;   
+}
+
+#recommended-section .card-title{
+    font-size: 1.1rem;
+}
+
+#recommended-section .card-subtitle{
+    color: #555;
+}
+#recommended-section .fa-chart-simple{
+    color: #7550FD;
+}
+#recommended-section .card-group + .card-group:not(:last-child){
+     border-bottom: 2px solid #d4d1dd;
+}
+#recommended-section .card-group:last-child{
+    margin-top: 1rem;    
+}
+.fa-bookmark{
+    color: #444;
+}
+
+.carousel .fa-chevron-left,
+.carousel .fa-chevron-right{
+    color: black;
+    background-color: white; 
+    color: black;            
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;      
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    opacity: 1 !important; 
+}
+.carousel .fa-chevron-left{
+    margin-left: -50%;
+}
+.carousel .fa-chevron-right{
+    margin-right: -50%;
+}
+.carousel-control-prev{
+    justify-content: start;
+}
+.carousel-control-next{
+    justify-content: end;
+}
+
+/* Fix card nei caroselli per schermi tra 992x e 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+
+
+    .card .card-group{
+        font-size: 0.8rem !important;
+    }
+
+    section:not(#hero) .card-body {
+        padding: 1rem 0.5rem !important;
+    }
+}

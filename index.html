@@ -5,20 +5,628 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/49727d7509.js" crossorigin="anonymous"></script>
     <!--============ BOOTSTRAP  CDN LINK ============-->
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css'>
     <link rel="stylesheet" href="assets/css/style.css">
-    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
-       
+        <nav class="navbar navbar-expand-lg border-bottom py-2">
+            <div class="container-fluid px-4">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="assets/img/logo.svg" alt="Logo" width="30" height="30" class="me-2">
+                </a>
+
+                <div class="collapse navbar-collapse" id="navbarNavLinks">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Browse
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Landings
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Accounts
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="d-flex align-items-center">
+                    <a href="#" class="nav-link text-secondary me-3 position-relative">
+                        <i class="fa-regular fa-bell fs-5"></i>
+                        <span class="position-absolute p-1  rounded-circle">
+                            <span class="visually-hidden">New alerts</span>
+                        </span>
+                    </a>
+
+                    <div class="dropdown me-2">
+                        <a href="#" class="d-block text-decoration-none position-relative" id="dropdownUser1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="assets/img/avatar-1.jpg" alt="mdo" width="50" height="50"
+                                class="rounded-circle profile-img border">
+                            <span class="position-absolute p-1  rounded-circle">
+                                <span class="visually-hidden">New alerts</span>
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end shadow-sm" aria-labelledby="dropdownUser1">
+                            <li>
+                                <a class="dropdown-item d-flex gap-3" href="#">
+                                    <img src="assets/img/avatar-1.jpg" alt="mdo" width="50" height="50"
+                                        class="rounded-circle profile-img border">
+                                    <div class="d-flex flex-column justify-content-center">
+                                        <h6 class="m-0">Annette Black</h6>
+                                        <p class="text-secondary m-0">annette@geeksui.com</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item fw-semibold py-2" href="#"><i
+                                        class="fa-regular fa-user me-3"></i>Profile</a></li>
+                            <li><a class="dropdown-item fw-semibold py-2" href="#"><i
+                                        class="fa-regular fa-star me-3"></i>Subscription</a></li>
+                            <li><a class="dropdown-item fw-semibold py-2" href="#"><i
+                                        class="fa-solid fa-gear me-3"></i>Settings</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item fw-semibold py-3" href="#"><i
+                                        class="fa-solid fa-power-off me-3"></i>Sign out</a></li>
+                        </ul>
+                    </div>
+
+                    <button class="navbar-toggler ms-2 border-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavLinks" aria-controls="navbarNavLinks" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main>
+        <!--=============== Hero ===============-->
+        <section id="hero-section">
+            <!--=============== Hero top ===============-->
+            <div style="background-color: #7550FF;" id="hero-top">
+                <div class="container-fluid col-xxl-8 pt-5">
+                    <div class="row flex-column-reverse flex-lg-row-reverse align-items-center g-5">
+                        <div class="col-10 col-sm-8 col-lg-6">
+                            <img src="assets/img/hero-img.png" class="d-block mx-lg-auto img-fluid" alt="Hero image">
+                        </div>
+                        <div class="col-lg-6">
+                            <h1 class="display-5 fw-bold lh-1 text-light mb-3">Welcome Web Students!</h1>
+                            <p class="lead fw-medium text-light opacity-50">Hand-picked Instructor and expertly crafted
+                                courses, designed for the modern students and
+                                entrepreneur.
+                            </p>
+                            <div class="d-flex gap-2 justify-content-md-start">
+                                <button type="button"
+                                    class="btn text-light rounded-2 fw-medium fs-5 btn-lg me-md-2">Browse
+                                    Courses</button>
+                                <button type="button" class="btn fw-medium rounded-2 fs-5 btn-lg ">Are you
+                                    instructor?</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--=============== Hero bottom ===============-->
+            <div class="container-fluid" id="hero-bottom">
+                <div class="row g-0">
+                    <div class="col-12 col-md-4">
+                        <div class="card">
+                            <div class="card-body d-flex align-items-center gap-3 ">
+                                <i class="fa-solid fa-video"></i>
+                                <div>
+                                    <h5 class="card-title fw-bold fs-5">30,000 online courses</h5>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary">Enjoy a variety of fresh topics
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card">
+                            <div class="card-body d-flex align-items-center gap-3 ">
+                                <i class="fa-solid fa-user-group"></i>
+                                <div>
+                                    <h5 class="card-title fw-bold fs-5">Expert instructions</h5>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary">Find the right instructor for you
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card">
+                            <div class="card-body d-flex align-items-center gap-3 ">
+                                <i class="fa-regular fa-clock"></i>
+                                <div>
+                                    <h5 class="card-title fw-bold fs-5">Lifetime access </h5>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary">Learn on your schedule</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!--=============== Recommended ===============-->
+        <section class="container-md pt-5" id="recommended-section">
+            <h2 class="pb-3 ps-4 fw-semibold"> Recommended to you</h2>
+            <!--=============== Carousel ===============-->
+            <div id="carouselExample" class="carousel slide p-4" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row row-cols-2 row-cols-lg-4 row-gap-4">
+                            <!--=============== GraphQl ===============-->
+                            <div class="col">
+                                <div class="card w-100">
+                                    <img src="assets/img/course-graphql.jpg" class="card-img-top img-fluid" alt="...">
+                                    <div class="card-body h-100 ">
+                                        <h5 class="card-title fw-semibold pb-2">GraphQl: introduction to graphQl for
+                                            beginners</h5>
+                                        <div class="card-subtitle fw-medium d-flex align-items-center gap-2">
+                                            <div class="d-flex align-items-baseline gap-2 pb-3">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p class="card-text ">2h 40m</p>
+                                            </div>
+                                            <div class="d-flex align-items-baseline gap-2 pb-3">
+                                                <i class="fa-solid fa-chart-simple"></i>
+                                                <p class="card-text">Advance</p>
+
+                                            </div>
+                                        </div>
+                                        <div class="card-group d-flex align-items-center pb-3">
+                                            <div class="d-flex text-warning align-items-center">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <p class="card-text text-warning fs-5 fw-medium mx-2">2.5</p>
+                                            </div>
+                                            <p class="card-text text-secondary fs-5 fw-medium">(1,500)</p>
+                                        </div>
+                                        <div class="card-group pb-2">
+                                            <p class="card-text fw-bolder fs-5 d-inline-block">$500</p>
+                                            <p class="card-text fw-normal fs-5 position-relative discount">$600</p>
+                                        </div>
+                                        <div class="card-group">
+                                            <a href="#"
+                                                class="d-flex p-1 w-100 text-decoration-none align-items-center justify-content-between gap-2"
+                                                id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <img src="assets/img/avatar-5.jpg" alt="mdo" width="40" height="40"
+                                                        class="rounded-circle profile-img border">
+                                                    <p class="text-secondary m-0 fw-medium fs-6 text-nowrap">Brooklyn
+                                                        Simmons</p>
+                                                </div>
+                                                <i class="fa-regular fa-bookmark float-end fs-4"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--=============== JavaScript ===============-->
+                            <div class="col">
+                                <div class="card w-100">
+                                    <img src="assets/img/course-javascript.jpg" class="card-img-top img-fluid"
+                                        alt="...">
+                                    <div class="card-body h-100">
+                                        <h5 class="card-title fw-semibold pb-2">A complete Beguiner-s guide to
+                                            JavaScript</h5>
+                                        <div class="card-subtitle fw-medium d-flex align-items-center gap-2">
+                                            <div class="d-flex align-items-baseline gap-2 pb-3">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p class="card-text ">4h 10m</p>
+                                            </div>
+                                            <div class="d-flex align-items-baseline gap-2 pb-3">
+                                                <i class="fa-solid fa-chart-simple"></i>
+                                                <p class="card-text">Advance</p>
+
+                                            </div>
+                                        </div>
+                                        <div class="card-group d-flex align-items-center pb-3">
+                                            <div class="d-flex text-warning align-items-center">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <p class="card-text text-warning fs-5 fw-medium mx-2">3.5</p>
+                                            </div>
+                                            <p class="card-text text-secondary fs-5 fw-medium">(7,500)</p>
+                                        </div>
+                                        <div class="card-group pb-2">
+                                            <p class="card-text fw-bolder fs-5 d-inline-block">$700</p>
+                                            <p class="card-text fw-normal fs-5 position-relative discount">$850</p>
+                                        </div>
+                                        <div class="card-group">
+                                            <a href="#"
+                                                class="d-flex p-1 w-100 text-decoration-none align-items-center justify-content-between gap-2"
+                                                id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <img src="assets/img/avatar-1.jpg" alt="mdo" width="40" height="40"
+                                                        class="rounded-circle profile-img border">
+                                                    <p class="text-secondary m-0 fw-medium fs-6 text-nowrap">Jenny
+                                                        Wilson</p>
+                                                </div>
+                                                <i class="fa-regular fa-bookmark float-end fs-4"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--=============== Node Js===============-->
+                            <div class="col">
+                                <div class="card w-100">
+                                    <img src="assets/img/course-node.jpg" class="card-img-top img-fluid" alt="...">
+                                    <div class="card-body h-100 ">
+                                        <h5 class="card-title fw-semibold pb-2">Beginning Node.js, Express & MongoDB
+                                            Development
+                                        </h5>
+                                        <div class="card-subtitle fw-medium d-flex align-items-center gap-2">
+                                            <div class="d-flex align-items-baseline gap-2 pb-3">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p class="card-text ">2h 00m</p>
+                                            </div>
+                                            <div class="d-flex align-items-baseline gap-2 pb-3">
+                                                <i class="fa-solid fa-chart-simple"></i>
+                                                <p class="card-text">Intermediate</p>
+
+                                            </div>
+                                        </div>
+                                        <div class="card-group d-flex align-items-center pb-3">
+                                            <div class="d-flex text-warning align-items-center">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <p class="card-text text-warning fs-5 fw-medium mx-2">4.0</p>
+                                            </div>
+                                            <p class="card-text text-secondary fs-5 fw-medium">(15,700)</p>
+                                        </div>
+                                        <div class="card-group pb-2">
+                                            <p class="card-text fw-bolder fs-5 d-inline-block">$800</p>
+                                            <p class="card-text fw-normal fs-5 position-relative discount">$950</p>
+                                        </div>
+                                        <div class="card-group">
+                                            <a href="#"
+                                                class="d-flex p-1 w-100 text-decoration-none align-items-center justify-content-between gap-2"
+                                                id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <img src="assets/img/avatar-3.jpg" alt="mdo" width="40" height="40"
+                                                        class="rounded-circle profile-img border">
+                                                    <p class="text-secondary m-0 fw-medium fs-6 text-nowrap">Sina Ray
+                                                    </p>
+                                                </div>
+                                                <i class="fa-regular fa-bookmark float-end fs-4"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--=============== Lavarel ===============-->
+                            <div class="col">
+                                <div class="card w-100">
+                                    <img src="assets/img/course-laravel.jpg" class="card-img-top img-fluid" alt="...">
+                                    <div class="card-body h-100 ">
+                                        <h5 class="card-title fw-semibold pb-2">Lavarel: The Ultimate Beguinner's Guide
+                                            to Learn
+                                        </h5>
+                                        <div class="card-subtitle fw-medium d-flex align-items-center gap-2">
+                                            <div class="d-flex align-items-baseline gap-2 pb-3">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p class="card-text ">1h 00m</p>
+                                            </div>
+                                            <div class="d-flex align-items-baseline gap-2 pb-3">
+                                                <i class="fa-solid fa-chart-simple"></i>
+                                                <p class="card-text">Beginner</p>
+
+                                            </div>
+                                        </div>
+                                        <div class="card-group d-flex align-items-center pb-3">
+                                            <div class="d-flex text-warning align-items-center">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                                <p class="card-text text-warning fs-5 fw-medium mx-2">4.5</p>
+                                            </div>
+                                            <p class="card-text text-secondary fs-5 fw-medium">(2,500)</p>
+                                        </div>
+                                        <div class="card-group pb-2">
+                                            <p class="card-text fw-bolder fs-5 d-inline-block">$170</p>
+                                            <p class="card-text fw-normal fs-5 position-relative discount">$220</p>
+                                        </div>
+                                        <div class="card-group">
+                                            <a href="#"
+                                                class="d-flex p-1 w-100 text-decoration-none align-items-center justify-content-between gap-2"
+                                                id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <img src="assets/img/avatar-7.jpg" alt="mdo" width="40" height="40"
+                                                        class="rounded-circle profile-img border">
+                                                    <p class="text-secondary m-0 fw-medium fs-6 text-nowrap">Sobo Rikhan
+                                                    </p>
+                                                </div>
+                                                <i class="fa-regular fa-bookmark float-end fs-4"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row row-cols-2 row-cols-lg-4 row-gap-4">
+                            <!--=============== Html5 ===============-->
+                            <div class="col">
+                                <div class="card w-100">
+                                    <img src="assets/img/course-html.jpg" class="card-img-top img-fluid" alt="...">
+                                    <div class="card-body h-100 ">
+                                        <h5 class="card-title fw-semibold pb-2">Html Full Course - Build a Website
+                                            Tutorial
+                                        </h5>
+                                        <div class="card-subtitle fw-medium d-flex align-items-center gap-2">
+                                            <div class="d-flex align-items-baseline gap-2 pb-3">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p class="card-text ">3h 16m</p>
+                                            </div>
+                                            <div class="d-flex align-items-baseline gap-2 pb-3">
+                                                <i class="fa-solid fa-chart-simple"></i>
+                                                <p class="card-text">Beginner</p>
+
+                                            </div>
+                                        </div>
+                                        <div class="card-group d-flex align-items-center pb-3">
+                                            <div class="d-flex text-warning align-items-center">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <p class="card-text text-warning fs-5 fw-medium mx-2">3.0</p>
+                                            </div>
+                                            <p class="card-text text-secondary fs-5 fw-medium">(1,600)</p>
+                                        </div>
+                                        <div class="card-group pb-2">
+                                            <p class="card-text fw-bolder fs-5 d-inline-block">$550</p>
+                                            <p class="card-text fw-normal fs-5 position-relative discount">$700</p>
+                                        </div>
+                                        <div class="card-group">
+                                            <a href="#"
+                                                class="d-flex p-1 w-100 text-decoration-none align-items-center justify-content-between gap-2"
+                                                id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <img src="assets/img/avatar-8.jpg" alt="mdo" width="40" height="40"
+                                                        class="rounded-circle profile-img border">
+                                                    <p class="text-secondary m-0 fw-medium fs-6 text-nowrap">Miston
+                                                        Wilson</p>
+                                                </div>
+                                                <i class="fa-regular fa-bookmark float-end fs-4"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--=============== React ===============-->
+                            <div class="col">
+                                <div class="card w-100">
+                                    <img src="assets/img/course-react.jpg" class="card-img-top img-fluid" alt="...">
+                                    <div class="card-body h-100 ">
+                                        <h5 class="card-title fw-semibold pb-2"> How To easily create a webiste with
+                                            React</h5>
+                                        <div class="card-subtitle fw-medium d-flex align-items-center gap-2">
+                                            <div class="d-flex align-items-baseline gap-2 pb-3">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p class="card-text ">3h 55m</p>
+                                            </div>
+                                            <div class="d-flex align-items-baseline gap-2 pb-3">
+                                                <i class="fa-solid fa-chart-simple"></i>
+                                                <p class="card-text">Advance</p>
+
+                                            </div>
+                                        </div>
+                                        <div class="card-group d-flex align-items-center pb-3">
+                                            <div class="d-flex text-warning align-items-center">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                                <p class="card-text text-warning fs-5 fw-medium mx-2">4.5</p>
+                                            </div>
+                                            <p class="card-text text-secondary fs-5 fw-medium">(1,500)</p>
+                                        </div>
+                                        <div class="card-group pb-2">
+                                            <p class="card-text fw-bolder fs-5 d-inline-block">$600</p>
+                                            <p class="card-text fw-normal fs-5 position-relative discount">$750</p>
+                                        </div>
+                                        <div class="card-group">
+                                            <a href="#"
+                                                class="d-flex p-1 w-100 text-decoration-none align-items-center justify-content-between gap-2"
+                                                id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <img src="assets/img/avatar-2.jpg" alt="mdo" width="40" height="40"
+                                                        class="rounded-circle profile-img border">
+                                                    <p class="text-secondary m-0 fw-medium fs-6 text-nowrap">April Noms
+                                                    </p>
+                                                </div>
+                                                <i class="fa-regular fa-bookmark float-end fs-4"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--=============== Gatsby ===============-->
+                            <div class="col">
+                                <div class="card w-100">
+                                    <img src="assets/img/course-gatsby.jpg" class="card-img-top img-fluid" alt="...">
+                                    <div class="card-body h-100 ">
+                                        <h5 class="card-title fw-semibold pb-2"> Revolutionize how you build the web
+                                            with us</h5>
+                                        <div class="card-subtitle fw-medium d-flex align-items-center gap-2">
+                                            <div class="d-flex align-items-baseline gap-2 pb-3">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p class="card-text ">1h 465m</p>
+                                            </div>
+                                            <div class="d-flex align-items-baseline gap-2 pb-3">
+                                                <i class="fa-solid fa-chart-simple"></i>
+                                                <p class="card-text">Intermediate</p>
+
+                                            </div>
+                                        </div>
+                                        <div class="card-group d-flex align-items-center pb-3">
+                                            <div class="d-flex text-warning align-items-center">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+
+                                                <p class="card-text text-warning fs-5 fw-medium mx-2">2.0</p>
+                                            </div>
+                                            <p class="card-text text-secondary fs-5 fw-medium">(16,500)</p>
+                                        </div>
+                                        <div class="card-group pb-2">
+                                            <p class="card-text fw-bolder fs-5 d-inline-block">$800</p>
+                                            <p class="card-text fw-normal fs-5 position-relative discount">$850</p>
+                                        </div>
+                                        <div class="card-group">
+                                            <a href="#"
+                                                class="d-flex p-1 w-100 text-decoration-none align-items-center justify-content-between gap-2"
+                                                id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <img src="assets/img/avatar-6.jpg" alt="mdo" width="40" height="40"
+                                                        class="rounded-circle profile-img border">
+                                                    <p class="text-secondary m-0 fw-medium fs-6 text-nowrap">April Noms
+                                                    </p>
+                                                </div>
+                                                <i class="fa-regular fa-bookmark float-end fs-4"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--=============== Python ===============-->
+                            <div class="col">
+                                <div class="card w-100">
+                                    <img src="assets/img/course-python.jpg" class="card-img-top img-fluid" alt="...">
+                                    <div class="card-body h-100 ">
+                                        <h5 class="card-title fw-semibold pb-2">Back-end, Machine Learning & AI with
+                                            Python </h5>
+                                        <div class="card-subtitle fw-medium d-flex align-items-center gap-2">
+                                            <div class="d-flex align-items-baseline gap-2 pb-3">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <p class="card-text ">1h 465m</p>
+                                            </div>
+                                            <div class="d-flex align-items-baseline gap-2 pb-3">
+                                                <i class="fa-solid fa-chart-simple"></i>
+                                                <p class="card-text">Intermediate</p>
+
+                                            </div>
+                                        </div>
+                                        <div class="card-group d-flex align-items-center pb-3">
+                                            <div class="d-flex text-warning align-items-center">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <p class="card-text text-warning fs-5 fw-medium mx-2">3.0</p>
+                                            </div>
+                                            <p class="card-text text-secondary fs-5 fw-medium">(1,400)</p>
+                                        </div>
+                                        <div class="card-group pb-2">
+                                            <p class="card-text fw-bolder fs-5 d-inline-block">$320</p>
+                                            <p class="card-text fw-normal fs-5 position-relative discount">$450</p>
+                                        </div>
+                                        <div class="card-group">
+                                            <a href="#"
+                                                class="d-flex p-1 w-100 text-decoration-none align-items-center justify-content-between gap-2"
+                                                id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <img src="assets/img/avatar-4.jpg" alt="mdo" width="40" height="40"
+                                                        class="rounded-circle profile-img border">
+                                                    <p class="text-secondary m-0 fw-medium fs-6 text-nowrap">April Noms
+                                                    </p>
+                                                </div>
+                                                <i class="fa-regular fa-bookmark float-end fs-4"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <i class="fa-solid fa-chevron-left" aria-hidden="true" style="opacity: 1;"></i>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
 
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"> </script>
     <script src="assets/js/script.js"></script>
 </body>
 
