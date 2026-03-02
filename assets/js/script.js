@@ -46,3 +46,37 @@ window.addEventListener("load", () => {
 window.addEventListener("resize", () => {
   adattaCarosello();
 });
+
+const bookmarkList = document.querySelectorAll('.fa-bookmark')
+
+bookmarkList.forEach(bookmark => {
+
+  bookmark.addEventListener('mouseover', () => {
+    if (bookmark.classList.value.includes("clicked")) {
+    } else {
+      bookmark.classList.add('fa-solid')
+      bookmark.classList.remove('fa-regular')
+    }
+  })
+
+  bookmark.addEventListener('mouseout', () => {
+    if (bookmark.classList.value.includes("clicked")) {
+    } else {
+      bookmark.classList.remove('fa-solid')
+      bookmark.classList.add('fa-regular')
+    }
+  })
+
+  bookmark.addEventListener('click', () => {
+    bookmark.classList.toggle('clicked')
+    console.log(bookmark.classList.value)
+    if (bookmark.classList.value.includes("clicked")) {
+      bookmark.classList.add('fa-solid')
+      bookmark.classList.remove('fa-regular')
+    } else {
+      bookmark.classList.remove('fa-solid')
+      bookmark.classList.add('fa-regular')
+    }
+  })
+
+})
