@@ -119,10 +119,10 @@ section:not(#hero-section) .card-group:last-child{
     opacity: 1 !important; 
 }
 .carousel .fa-chevron-left{
-    margin-left: -50%;
+    margin-left: -30%;
 }
 .carousel .fa-chevron-right{
-    margin-right: -50%;
+    margin-right: -30%;
 }
 .carousel-control-prev{
     justify-content: start;
